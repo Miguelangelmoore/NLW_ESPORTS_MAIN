@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-image: url(assets/neon.gif);
+    background-position:  top center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: #000000;
+}
+
+
+body * {
+    font-family: 'Inter', sans-serif;
+    line-height: 160%;
+}
+   
+/*
+main * {
+    border: 1px solid red;
+}
+Não é mais necessário 
+*/
+
+header {
+    padding-top: 32px;
+    /*text-align: center;*/
+    height: calc(120px + 32px);
+}
+
+header div {
+    width: 120px;
+    margin: auto;
+    background-image: linear-gradient(90deg, #c60000b9 0%, #ff0095d6.52%, #00d5ffd8 100%);
+
+    border-radius: 50%;
+
+    display: flex;
+    padding: 4px;
+
+    transition: transform .3s;
+    
+}
+
+header div:hover {
+    transform: scale(1.1);
+}
+
+header img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+main {
+    max-width: 580px;
+    width: 90%;
+    margin: 32px auto;
+
+    display: grid;
+    gap: 24px;
+
+    margin-top: 32px;
+}
+
+section {
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(90deg, #000000 0%, #00d9ffd0.52%, #ff00b3b6 100%);
+    padding-top: 4px;
+    border-radius: 10px;
+}
+
+section div {
+    background-color: #000000c1;
+    padding: 32PX;
+    padding-top: 24px;
+    border-radius: 8px;
+
+}
+
+section h2 {
+    letter-spacing: -0.47px;
+    
+}
+
+section p {
+    letter-spacing: -0.18px;
+    color: #ffffff;
+     background: linear-gradient(90deg,#00d5ff.60%, #ff00b3 100%);
+     border-radius: 50px;
+}
+
+section ul {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+
+    margin-top: 24px;
+}
+
+section ul li {
+    transition: transform .3s;
+}
+
+
+section ul li:hover {
+    transform: scale(1.1)
+}
+
+.games-list img {
+    width: 90px;
+    border-radius: 100px;
+}
+
+.channel-list img {
+    border-radius: 100%;
+    width: 80px;
+    border: 0,1px solid #000000;
+}
+
+header div {
+    animation: fromTop .7s .2s backwards;
+}
+
+main section {
+    animation: fromBottom .7s backwards;
+}
+
+main section:nth-child(1) {
+    animation-delay: 0;
+}
+
+
+body::-webkit-scrollbar{
+    width: 15px;
+}
+body::-webkit-scrollbar-thumb{
+
+    background-color: #ff00b3;
+    border-radius: 50px;  
+}
+
+body::-webkit-scrollbar-thumb:hover{
+
+    background-color:#00d5ff;
+    
+}
